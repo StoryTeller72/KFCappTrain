@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imImageOfProduct"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tvDescriptionProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imImageOfProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cv_price"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="asdsadsadasd"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imImageOfProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imImageOfProduct"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="#E8E8E8">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="178 Р"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

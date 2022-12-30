@@ -70,16 +70,30 @@
                 android:layout_height="wrap_content"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:orientation="horizontal"
-                app:layout_scrollFlags="scroll|snap"/>
+                app:layout_scrollFlags="scroll|snap"
+                tools:listitem="@layout/advertisment_item"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcMenuCategory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/menu_item"
                 android:orientation="horizontal"/>
 
         </com.google.android.material.appbar.AppBarLayout>
+
+     <androidx.core.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/rc_headers_products"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+              android:orientation="vertical"/>
+     </androidx.core.widget.NestedScrollView>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
