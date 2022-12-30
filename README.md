@@ -6,4 +6,4 @@ I want to learn next topics:
   1.AppBarlayoyt with scrolling
   2.RecyclerView
   3.offsetChangeListener
-  4. improce my scills in XML
+  4.improve my scills in XML
