@@ -1,6 +1,6 @@
 
 # KFCappTrain
-In this app i can try to copy interface of KFC app for android.
+In this app i try to copy interface of KFC app for android.
 
 I want to learn next topics:
   1.AppBarlayoyt with scrolling
