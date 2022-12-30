@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KFCmain</string>
+    <string name="toolBarHeader">KFC</string>
+    <string name="vyvoz">Самовывоз</string>
+</resources>
