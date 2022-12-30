@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
+import androidx.core.view.isVisible
 import com.example.kfcmain.adapters.AdapterWithDelegate
 import com.example.kfcmain.adapters.AdvertisementAdapter
 import com.example.kfcmain.adapters.MenuCategoryAdapter
@@ -28,5 +29,19 @@ class MainActivity : AppCompatActivity() {
                 HeaderDelegate(this),
             )
         )
+        binding.appbarLayoutMain.addOnOffsetChangedListener{_, offset ->
+            val toolbarHeight = binding.cvVyvozInAppbar.height
+            if(toolbarHeight + offset < 0){
+                binding.tvKfc.visibility = View.GONE
+                binding.cvVyvozToolbar.visibility = View.VISIBLE
+                binding.ivAvatar.setImageResource(R.drawable.avatar_without_back)
+            }else{
+                binding.tvKfc.visibility = View.VISIBLE
+                binding.ivAvatar.setImageResource(R.drawable.avatar_with_back)
+                binding.cvVyvozToolbar.visibility = View.GONE
+            }
+        }
     }
+
+
 }
