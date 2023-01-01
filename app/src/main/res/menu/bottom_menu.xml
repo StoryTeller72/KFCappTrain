@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Меню" android:icon="@drawable/ic_estaurant_menu_24"></item>
+    <item android:title="Купоны" android:icon="@drawable/ic_cupons_24"></item>
+    <item android:title="Рестораны" android:icon="@drawable/ic_location_24"></item>
+    <item android:title="Корзина" android:icon="@drawable/ic_shopping_basket_24"></item>
+</menu>

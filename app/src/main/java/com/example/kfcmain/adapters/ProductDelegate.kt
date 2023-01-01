@@ -9,7 +9,7 @@ import com.example.kfcmain.adapters.items.ListItem
 import com.example.kfcmain.adapters.items.Product
 import com.example.kfcmain.adapters.items.viewHolders.ProductHolder
 
-class ProductDelegate(context: Context): Delegate {
+class ProductDelegate(): Delegate {
     override fun forItem(listItem: ListItem): Boolean = listItem is Product
 
     override fun getViewHolder(parent: ViewGroup): RecyclerView.ViewHolder {

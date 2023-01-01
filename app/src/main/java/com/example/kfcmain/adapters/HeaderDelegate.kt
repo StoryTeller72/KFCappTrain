@@ -1,15 +1,14 @@
-package com.example.kfcmain.adapters.items
+package com.example.kfcmain.adapters
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kfcmain.R
-import com.example.kfcmain.adapters.Delegate
+import com.example.kfcmain.adapters.items.Category
+import com.example.kfcmain.adapters.items.ListItem
 import com.example.kfcmain.adapters.items.viewHolders.HeaderHolder
-import com.example.kfcmain.adapters.items.viewHolders.ProductHolder
 
-class HeaderDelegate(context: Context): Delegate {
+class HeaderDelegate(): Delegate {
     override fun forItem(listItem: ListItem): Boolean  = listItem is Category
 
     override fun getViewHolder(parent: ViewGroup): RecyclerView.ViewHolder {
