@@ -9,18 +9,10 @@
         android:id="@+id/menuFragment"
         android:name="com.example.kfcmain.fragments.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" >
-        <action
-            android:id="@+id/action_menuFragment_to_cuponsFragment"
-            app:destination="@id/cuponsFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_menu" />
     <fragment
         android:id="@+id/cuponsFragment"
         android:name="com.example.kfcmain.fragments.CuponsFragment"
         android:label="fragment_cupons"
-        tools:layout="@layout/fragment_cupons" >
-        <action
-            android:id="@+id/action_cuponsFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_cupons" />
 </navigation>
